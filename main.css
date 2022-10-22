@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap");
+
+body,
+html {
+  height: 100%;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.nav-item .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.bg-image {
+  background: url("assets/bg.avif") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .bg-image {
+    min-height: 170vh;
+  }
+
+  #home {
+    min-height: 170vh;
+  }
+
+  #layanan {
+    margin-top: 0 !important;
+    height: 190vh !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .bg-image {
+    height: 120vh;
+  }
+  #home {
+    height: 120vh;
+  }
+
+  #layanan {
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #layanan {
+    min-height: 150vh;
+  }
+
+  .contact-us {
+    height: 10px;
+  }
+}
+
+.bg-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
+.form-control:focus,
+.form-control:active {
+  border-color: #000;
+  outline: 0;
+  box-shadow: inset 0 0 0;
+}
+
+.bg-rounded {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #425f57;
+}
+
+.img {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+#jadwal {
+  background-color: #425f57
+}
+
+@media screen and (max-width: 619px) {
+  iframe {
+    width: 400px;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 418px) {
+  iframe {
+    width: 250px;
+    height: 300px;
+  }
+}
+
